@@ -30,7 +30,10 @@ class ThreadsHandler
         $this->postTable ="<table> <th><td>Сообщения</td></th>";
 
         foreach ($data as $post){
-            $this->postTable .="<tr><td><p><b>{$post['username']}</b> <br> {$post['message_text']} <i> at {$post['date']}</i></p> </td></tr>";
+            $this->postTable .="<tr><td><p><b>{$post['username']}</b> <br> {$post['message_text']} <i> at {$post['date']}</i></p>";
+            if($post['imgpath']!=""){$this->postTable .="<br><img src='{$post['imgpath']}' height='320' width='240'>";}
+
+            $this->postTable .="</td></tr>";
         }
         $this->postTable .="</table>";
         return $this->postTable;

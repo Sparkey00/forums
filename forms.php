@@ -24,7 +24,7 @@ class forms
                          <p>Нет учетной записи? </p><a href='registration.php'>Зарегистрируйтесь</a> </form>";
 
 
-    public $postForm = " <form method='post' action='addmessage.php'><br>
+    public $postForm = " <form enctype='multipart/form-data' method='post' action='addmessage.php'><br>
   
                          <div id='messageformat'>
                          <button type='button' id='bold-button' onclick='insertBold()'><b>Ж</b></button>
@@ -36,5 +36,8 @@ class forms
                          <input type='file' name='image'>
                          <div class=\"g-recaptcha\" data-sitekey=\"6LdW_IMUAAAAABiCpT6NZh87XpkREy5Q14_inGUf\"></div>
                          <input type='submit' value='Написать'></form> ";
-
+    public $threadForm = " <form method='post' action='createThread.php'>
+                           <input type='text' name='threadname' placeholder='Создать тему'>
+                           <input type='submit' value='Создать'>
+</form>";
 }

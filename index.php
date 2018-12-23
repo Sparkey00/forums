@@ -26,7 +26,7 @@ if(isset($_SESSION['username'])){
 
      print $threadsHandler->generateTable(20);
 
-    print $formprinter->postForm;
+    print $formprinter->threadForm;
 }
 else {print $formprinter->signForm;}
 
