@@ -19,7 +19,7 @@ after entering valid data click "register" and now you can sign in using entered
 2. Creating a thread
 Go to /index.php and sign in if you haven't already.
 Enter your topic into textbox below existing threads and click "create"
-You can now proceed to your thread and begin holywar about who's Evangelion waifu is better. (Rei is).
+You can now proceed to your thread and begin holywar about whatever you think is important.
 
 3. Posting a message
 Yay, the good stuff! Go to /thread?threadid=*&page=* with "*" being any valid number from 0 to number of threads/page and find a textbox. Write down all you think about... whatever thread is about and smack that "send" button. Oh, you can also post some memes, there's also a button for this.
